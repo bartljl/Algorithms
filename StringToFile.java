@@ -3,7 +3,8 @@ In descending order.*/
 
 static void stringToFile(String s) throws IOException
 {
-     Hashtable<Character,Integer> t = new Hashtable<Character,Integer>();
+           Hashtable<Character,Integer> t = new Hashtable<Character,Integer>();
+           
 	   for(int i = 0; i < s.length(); i++)
 	   {
 	      if(t.containsKey(s.charAt(i)))
@@ -27,7 +28,8 @@ static void stringToFile(String s) throws IOException
 	   {
 	     Entry<Character, Integer> e = it.next();
 	     out.write(e.getKey() + " " + e.getValue() + "\r\n");
-	   }  
+	   } 
+	   
 	   out.close();
 }
 
